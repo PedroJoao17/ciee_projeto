@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro Interativo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .bg-danger-subtle {
+            background-color: #dc3545;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bg-body-tertiary">
+    <div class="container-fluid row m-0 text-center bg-danger-subtle p-1">
+        <div class="col-md-4">Frete grátis acima de R$ x reais</div>
+        <div class="col-md-4">x% OFF primeira compra</div>
+        <div class="col-md-4">Compre em até 10x sem juros</div>
+    </div>
+
+    <nav class="container-fluid d-flex row">
+        <div class="col-md-4">
+            <ul class="d-flex justify-content-center list-unstyled">
+                <li class="m-2"><a class="nav-link" href="/pages/filtroInterativo.html">FILTRO</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4 mt-2 text-center">
+            <a class="nav-link" href="/index.html"><img class="w-50" src="/img/logo.jpeg" alt=""></a>
+        </div>
+        <div class="col-md-4 mt-2">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="border-0 bg-body h-25"><i class="bi bi-person-fill"></i></button>
+                <button class="border-0 bg-body h-25"><i class="bi bi-cart"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex flex-column mt-5 m-0">
+        <div>
+            <h3 class="text-center">Explicação Sobre Tons de Pele</h3>
+            <div class="container-md">
+                <h4>Tonalidades de Pele</h4>
+                <p>
+                    As tonalidades de pele referem-se à coloração geral da pele de uma pessoa, que pode variar de claro
+                    a médio
+                    e escuro. Pessoas com tons de pele claro geralmente têm uma aparência mais clara, enquanto aquelas
+                    com tons de
+                    pele médio têm uma coloração intermediária, e aqueles com tons de pele escuro têm uma aparência mais
+                    escura.
+                </p>
+                <h4>Subtons de Pele</h4>
+                <p>
+                    Os subtons de pele são nuances sutis de cor que podem estar presentes em uma pessoa,
+                    independentemente da
+                    tonalidade geral da pele. Os subtons podem ser divididos em três categorias principais: quente, frio
+                    e neutro.
+                    Subtons quentes tendem a ter tons dourados, amarelados ou avermelhados. Subtons frios tendem a ter
+                    tons rosados,
+                    azulados ou acinzentados. Subtons neutros são uma mistura equilibrada de tons quentes e frios e não
+                    apresentam
+                    uma predominância clara de uma cor sobre a outra.
+                </p>
+                <h4>Importância na Maquiagem</h4>
+                <p>
+                    Identificar corretamente a tonalidade e o subtom da pele é essencial ao escolher produtos de
+                    maquiagem, como
+                    base, corretivo e pó, para garantir uma aparência natural e uma correspondência perfeita com a pele.
+                    Compreender
+                    os subtons da pele também pode ajudar na escolha de cores de maquiagem complementares, como sombras,
+                    batons e
+                    blushes, para realçar a beleza natural de uma pessoa.
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column mt-3 align-items-center">
+            <h2 class="text-center">Filtros de Tons de Pele</h2>
+            <div class="mt-3">
+                <h3>Filtro por Imagens</h3>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="container-fluid d-flex">
+                        <button class="border-0" id="tons-claro"><img src="/img/tom-claro.jpg" alt=""></button>
+                        <div class="d-flex flex-column mx-3 justify-content-center">
+                            <p class="m-0"><b>Tom de pele claro</b></p>
+                            <p class="m-0">Descrição: Coloração mais pálida e luminosa, geralmente com pouca
+                                pigmentação.</p>
+                        </div>
+                    </div>
+
+                    <ul class="list-unstyled mt-3" id="lista-tons-claro">
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-claro-quente.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele claro: Quente</b></p>
+                                <p class="m-0">Descrição: A pele clara com subtom quente pode ter uma aparência pêssego
+                                    ou creme.</p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-claro-frio.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele claro: Frio</b></p>
+                                <p class="m-0">Descrição: A pele clara com subtom frio pode parecer um pouco rosada ou
+                                    azulada.</p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-claro-neutro.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele claro: Médio</b></p>
+                                <p class="m-0">Descrição: A pele clara com subtom médio pode ter uma mistura de
+                                    características de tons quentes e frios.</p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-claro-oliva.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele claro: Oliva</b></p>
+                                <p class="m-0">Descrição: A pele clara com subtom oliva pode ter uma aparência um pouco
+                                    esverdeada ou acinzentada.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="container-fluid d-flex">
+                        <button class="border-0" id="tons-medio"><img src="/img/tom-medio.jpg" alt=""></button>
+                        <div class="d-flex flex-column mx-3 justify-content-center">
+                            <p class="m-0"><b>Tom de pele médio</b></p>
+                            <p class="m-0">Descrição: Tonalidade intermediária, nem muito clara nem muito escura, com
+                                uma cor mais equilibrada.</p>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled mt-3" id="lista-tons-medio">
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-medio-quente.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele médio: Quente</b></p>
+                                <p class="m-0">A pele de tonalidade média com subtom quente pode ter uma aparência
+                                    dourada ou mel.</p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-medio-frio.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele médio: Frio</b></p>
+                                <p class="m-0">A pele de tonalidade média com subtom frio pode parecer um pouco rosada
+                                    ou ter um tom de pele “bege rosado”.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-medio-neutro.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele médio: médio</b></p>
+                                <p class="m-0">A pele de tonalidade média com subtom médio pode ter uma mistura de
+                                    características de tons quentes e frios.</p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-medio-oliva.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele médio: Oliva</b></p>
+                                <p class="m-0">Descrição: A pele de tonalidade média com subtom oliva pode ter uma
+                                    aparência um pouco esverdeada ou bronzeada.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="container-fluid d-flex">
+                        <button class="border-0" id="tons-escuro"><img src="/img/tom-escuro.jpg" alt=""></button>
+                        <div class="d-flex flex-column mx-3 justify-content-center">
+                            <p class="m-0"><b>Tom de pele escuro</b></p>
+                            <p class="m-0">Descrição: Coloração mais profunda e rica, com maior quantidade de
+                                pigmentação.</p>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled mt-3" id="lista-tons-escuro">
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-escuro-quente.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele escura: Quente</b></p>
+                                <p class="m-0">Descrição: A pele de tonalidade escura com subtom quente pode ter uma
+                                    aparência dourada, caramelo ou bronzeada.</p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex "><button class="border-0"><img
+                                    src="/img/tom-escuro-frio.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele escura: Frio</b></p>
+                                <p class="m-0">Descrição: A pele de tonalidade escura com subtom frio pode parecer um
+                                    pouco azulada ou ter um tom de pele “chocolate”.</p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-escuro-neutro.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele escura: médio</b></p>
+                                <p class="m-0">Descrição: A pele de tonalidade escura com subtom médio pode ter uma
+                                    mistura de características de tons quentes e frios. </p>
+                            </div>
+                        </li>
+                        <li class="mt-3 container-fluid d-flex"><button class="border-0"><img
+                                    src="/img/tom-escuro-oliva.jpg" alt=""></button>
+                            <div class="d-flex flex-column mx-3 justify-content-center">
+                                <p class="m-0"><b>Tom de pele escura: Oliva</b></p>
+                                <p class="m-0">Descrição: A pele de tonalidade escura com subtom oliva pode ter uma
+                                    aparência um pouco esverdeada ou bronzeada.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NÃO APAGUE -->
+    <script src="/js/filtro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
